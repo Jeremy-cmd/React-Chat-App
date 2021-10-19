@@ -60,6 +60,7 @@ export const chatReducer = (state = initialState, action) => {
       };
 
     case LOGGED_IN:
+    console.log("the payload user is " + action.payload.user);
       return {
         ...state,
         isLoading: false,

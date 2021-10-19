@@ -93,23 +93,30 @@ export const loggedInAction = (user) => {
 };
 
 export const login = (user) => {
+  console.log("before dispatch");
   return async (dispatch) => {
     dispatch(startLoginAction());
     try{
+      console.log("before fetch");
       let response = await fetch(`http://localhost:3000/auth/signin`, {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        credentials: 'include',
+         credentials: 'include',
         body: JSON.stringify(user)
-      })
-      dispatch(loggedInAction(response.json()));
-      return await response.json();
+      });
+
+       let jsonResponse = await response.json();
+       console.log("the json data is " + jsonResponse.token);
+
+      dispatch(loggedInAction(jsonResponse));
+      return await jsonResponse;
+
 
     }catch(err){
-
+        console.log("the error is " + err);
     }
   };
 };
