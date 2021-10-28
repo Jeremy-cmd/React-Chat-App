@@ -9,7 +9,8 @@ import {
   FETCH_USER,
   FETCHED_USER,
   ADD_CONTACT,
-  ADDED_CONTACT
+  ADDED_CONTACT,
+  SELECT_CONTACT
 } from "../types.js"
 
 export const fetchUsersAction = () => {
@@ -180,6 +181,19 @@ export const fetchUser = (params, credentials, signal) => {
     }
   }
 }
+
+export const selectContactAction = (contact) => {
+  return {
+    type: SELECT_CONTACT,
+    payload: contact
+  };
+};
+
+export const selectContact = (contact) => {
+  return (dispatch) => {
+    dispatch(selectContactAction(contact));
+  };
+};
 
 export const addContactAction = () => {
   return {

@@ -1,0 +1,36 @@
+
+
+.chat{
+  width: 650px;
+  height: 90vh;
+  border-radius: 5px;
+  margin-left: 280px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+background-image: url("../assets/images/absurdity.png");
+}
+
+.chatBody{
+  height: 75vh;
+  margin-bottom: 5px;
+}
+
+
+.messageInput{
+  position: fixed;
+  bottom: 5px;
+  margin-top: auto;
+  /* bottom: 5px;  */
+
+}
+
+
+.buttonSend{
+  /* width: 7px; */
+  background-color: #30D5C8 !important;
+}
+
+.buttonSend:hover{
+  background-color: #00CED1 !important;
+}

@@ -9,7 +9,8 @@ import {
   FETCH_USER,
   FETCHED_USER,
   ADD_CONTACT,
-  ADDED_CONTACT
+  ADDED_CONTACT,
+  SELECT_CONTACT
 } from "../types.js"
 
 const initialState = {
@@ -19,6 +20,7 @@ const initialState = {
   isLoading: false,
   userToken: null,
   userInChat: null,
+  selectedContact: null,
   successMessage: null
 };
 
@@ -98,6 +100,12 @@ export const chatReducer = (state = initialState, action) => {
         ...state,
         userContacts: action.payload,
         isLoading: false
+      };
+
+    case SELECT_CONTACT:
+      return {
+        ...state,
+        selectedContact: action.payload
       };
 
     default:

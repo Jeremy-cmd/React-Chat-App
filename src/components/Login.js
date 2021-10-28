@@ -69,7 +69,7 @@ function Login(props){
 
 
 return (
-      <div >
+      <div className="login">
 
         <Form>
           <h2> Chat App </h2>

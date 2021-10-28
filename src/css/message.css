@@ -1,0 +1,41 @@
+
+
+.msgReceive{
+
+  display: flex;
+  margin-right: auto;
+  background-color: #30D5C8 !important;
+  color: white;
+  border-radius: 0 8px 8px 8px;
+
+
+}
+
+.msgReceive{
+  margin-right: auto;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  background-color: #30D5C8;
+  color: white;
+  text-align: center;
+
+}
+
+.msgSend{
+  margin-left: auto;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+
+}

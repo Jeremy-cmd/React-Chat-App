@@ -1,0 +1,30 @@
+.contacts {
+  /* width: 70%; */
+  width: 280px;
+  height: 90vh;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  border-width: thin;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+}
+
+/* .contacts .item:hover{
+  background: #efefef;
+    cursor: pointer
+} */
+
+.contacts .item {
+  height: 50px;
+  border-radius: 5px;
+  margin: 6px 3px;
+}
+
+.contacts .item:hover{
+  background: #30D5C8;
+    cursor: pointer;
+    color: white;
+}
